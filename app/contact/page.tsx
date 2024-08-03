@@ -69,7 +69,7 @@ export default function Contact() {
                 
                 {/* WhatsApp Icon */}
                 <a
-                  href="https://wa.me/0797408042" // Replace with your WhatsApp number
+                  href="https://wa.me/+254797408042" // Replace with your WhatsApp number
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-green-500 text-2xl flex items-center"
