@@ -1,5 +1,6 @@
-import Footer from "./componets/footer";
-import Navbar from "./componets/navbar";
+import Image from 'next/image';
+import Navbar from './componets/navbar';
+import Footer from './componets/footer';
 
 
 const cards = [
@@ -35,21 +36,16 @@ export default function Home() {
       <div className="flex-1 flex flex-col lg:flex-row">
         {/* Left Half with Background Image */}
         <div
-          className="lg:w-1/2 h-64 lg:h-auto bg-cover bg-center"
+          className="lg:w-1/2 h-64 lg:h-auto bg-cover bg-center relative"
           style={{ backgroundImage: "url('/background.png')" }}
         >
-          {/*Add content here if needed*/}
+          {/* Add content here if needed */}
         </div>
         {/* Right Half with Content */}
         <div className="lg:w-1/2 p-6">
           <p className="mt-4">
-          Welcome to Furahia adventures, We are here to make  your weekends super fine 😌
-For fun 😊
-,Team building
-,Tours 😁
-,Hiking
-
-And more sweet experiences around KU and it's surroundings. Thank you for joining ❤
+            Welcome to Furahia Adventures! We are here to make your weekends super fine 😌
+            For fun 😊, team building, tours 😁, hiking, and more sweet experiences around KU and its surroundings. Thank you for joining ❤
           </p>
           {/* Card Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mt-6">
@@ -58,9 +54,11 @@ And more sweet experiences around KU and it's surroundings. Thank you for join
                 key={index}
                 className="bg-white shadow-md rounded-lg overflow-hidden"
               >
-                <img
+                <Image
                   src={card.image}
                   alt={card.title}
+                  width={500}  // Adjust width as needed
+                  height={300} // Adjust height as needed
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
