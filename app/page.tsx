@@ -16,7 +16,7 @@ const cards = [
   },
   {
     image: "/team-building.jpeg",
-    title: "Team Build",
+    title: "Team Building",
     description: "Strengthen bonds through exciting team-building activities.",
   },
   {
